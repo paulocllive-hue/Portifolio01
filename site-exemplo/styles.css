@@ -1,28 +1,119 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;    
+}
+
+body{
     font-family: sans-serif;
-    box-sizing: border-box;
-    font-size: 18px;    
+    font-size: 18px;
+}
+/* CONFIGURAÇÃO CABEÇALHO */
+.cabecalho{
+    background-color:rgb(22, 19, 14);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center; 
+
+    padding: 25px 20px;
+
+}
+/* MENU CENTRALIZADO */
+.cabecalho_menu{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
-.menu{
-    background-color: #1f1e1e;
-    padding: 40px;
+ .cabecalho_menu ul{  /*o ul precisa ser declarado PARA QUE RETIRE OS SIMBOLOS DAS LINHAS */ 
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
 }
 
-h1{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 40px;
+.cabecalho_menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.p1, .p2 {
-    color: #ffffff;
-    background-color: #464646;
-    margin:0 0 20px 600px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+.cabecalho_menu a:hover{
+    color: #ffc011;
+    transition: 0.5s;
+}
+
+/* CONTEUDO */
+.cabecalho_conteudo{
+    
+    width: 100%;
+    max-width: 700px;
+
+    margin-bottom: auto;
+    margin:auto;
+    margin-left: 100px;
+}
+
+.cabecalho_titulo{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.cabecalho_paragrafo{
+    color: white;
+    font-size: 25px;
+    line-height: 1.4;
+
+    margin-bottom: 30px;
+}
+
+.cabecalho_botao{
+    background-color: #ffc011;
+    color: #000000;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;/* ESSE CURSOR SE REFERE AO CURSOR DO MOUSE QUANDO PASSA POR CIMA DO BOTÃO ELE MUDA O CURSOS PARA O DESEJADO */
+
+    transition: 0.5s;
+
+}
+
+.cabecalho_botao:hover{
+    background-color: #ad7f00;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 30px 20px;
+    }
+
+    .cabecalho_conteudo {
+        margin-left: 0;
+    }
+
+    .cabecalho_titulo {
+        font-size: 36px;
+    }
+
+    .cabecalho_paragrafo {
+        font-size: 20px;
+    }
+
 }
