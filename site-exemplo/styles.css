@@ -3,21 +3,22 @@
     padding: 0px;
     box-sizing: border-box;    
 }
-/*------------CONDFIGURAÇÃO GERAL-----------*/
+
+/*==========================*/
+/*CONDFIGURAÇÃO GERAL*/
+/*==========================*/
 body{
     /* 5 TEXTO */
     font-family: sans-serif;
     font-size: 18px;
 }
-/*---------CONFIGURAÇÃO CABEÇALHO----------- */
+
+/*==========================*/
+/*CONFIGURAÇÃO CABEÇALHO*/
+/*==========================*/
 .cabecalho{
     /* 1 CAIXA */
     padding: 25px 20px;
-
-    /* 2 POSIÇÃO */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 
     /* 3 TAMANHO */
     min-height: 100vh;
@@ -26,27 +27,34 @@ body{
     background-color:rgb(22, 19, 14);
 }
 
-/*----------CONTEINER----------*/
+/*==========================*/
+/*CONTEINER DE DIV*/
+/*==========================*/
 .conteiner{
+
+    /* 1 CAIXA */
+    margin: 0 auto;
+
     /* 2 POSIÇÃO */
-    width:100%;
-    max-width:1200px;
-
-    margin:0 auto;
-
     display: flex;
     flex-direction: column;
+
+    /* 3 TAMANHO */
+    width:100%;
+    max-width:1200px;
 }
 
-/*---------- MENU----------*/
-
+/*==========================*/
+/* MENU*/
+/*==========================*/
 .cabecalho_menu{
+    /* 1 CAIXA */
+    padding-top: 20px;
+    padding-bottom: 100px;
+
     /* 2 POSIÇÃO */
     display: flex;
     justify-content: center;
-    /*flex-direction: column;*/
-    margin-bottom: 100px;
-
 }
 
  .cabecalho_menu ul{  /*o ul precisa ser declarado PARA QUE RETIRE OS SIMBOLOS DAS LINHAS */ 
@@ -76,24 +84,17 @@ body{
 .cabecalho_menu a:hover{/*DEFINIÇÃO DA MUDAÇA CONTECENDO NO PAI PELO FILHO DEFININDO O QUE MUDA*/
     /* 4 VISUAL COR*/
     color: #ffc011;
-
-    
 }
 
+/*==========================*/
 /*----------CONTEUDO----------*/
+/*==========================*/
 .cabecalho_conteudo{
 
     /* 2 POSIÇÃO */
     width:100%;
     max-width:700px;
-    
-    /* 1 CAIXA
-    margin: auto auto auto 100px;
-
-    /* 3 TAMANHO */
-    /*width: 100%;
-   /* max-width: 700px; */
-    
+ 
 }
 
 .cabecalho_titulo{
@@ -111,7 +112,7 @@ body{
 .cabecalho_paragrafo{
     
     /* 1 CAIXA */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     /* 4 VISUAL COR*/
     color: white;
@@ -120,7 +121,10 @@ body{
     font-size: 25px;
     line-height: 1.4;
 }
+
+/*==========================*/
 /*--------BOTÃO---------*/
+/*==========================*/
 .cabecalho_botao{
 
     /* 1 CAIXA */
@@ -135,9 +139,9 @@ body{
     /* 5 TEXTO */
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 
     /* 6 EFEITOS */
-    cursor: pointer;/* ESSE CURSOR SE REFERE AO CURSOR DO MOUSE QUANDO PASSA POR CIMA DO BOTÃO ELE MUDA O CURSOS PARA O DESEJADO */
     transition: 0.5s;
 
 }
@@ -153,14 +157,9 @@ body{
     background-color: #ad7f00;
 }
 
-/*---------CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL-----------*/
-
-/* .conteiner{
-    width:100%;
-    max-width:700px;
-
-    margin: auto;
-}  */
+/*==========================*/
+/*CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL*/
+/*==========================*/
 
 .conteudo_principal{
     /* 1 CAIXA */
@@ -172,59 +171,36 @@ body{
 
 
 .projeto_01{
+
     max-width:700px;
-
-    /* 1 CAIXA */
-    
-    /* padding: 0px 20px; */
-
-    /* 2 POSIÇÃO */
-    /* display: flex;
-    flex-direction: column;
-    gap: 10px; */
-
-    /* 3 TAMANHO */
-    /* width: 100%;
-    max-width: 1200px; */
-
-    /* margin: 0 auto; */
 }
 
-/* h3{
-    /*1 CAIXA */
-   /* margin-bottom: 10px;
-} */
-
+/*==========================*/
+/*CONFIGURAÇÃO DO RODAPE*/
+/*==========================*/
 .rodape{ 
 
     /* 1 CAIXA */
-     padding: 20px;
-
-    /* 2 POSIÇÃO */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; 
+    padding-top:200px;
 
     /* 3 TAMANHO */
-    min-height: 300px;
+    width:100%;
+    min-height:250px;
 
     /* 4 VISUAL COR */
-    background-color: rgb(22, 19, 14);
-    color: white;
+    background:#16130e;
+    color:#fff;
 
+    /* 5 TEXTO */
+    text-align:center;
 }
-
+/*==========================*/
 /* CELULAR */
-
+/*==========================*/
 @media (max-width: 768px) {
 
     .cabecalho {
         padding: 30px 20px;
-    }
-
-    .cabecalho_conteudo {
-        margin-left: 0;
     }
 
     .cabecalho_titulo {
