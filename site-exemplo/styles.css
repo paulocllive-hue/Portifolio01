@@ -15,9 +15,9 @@ body{
     padding: 25px 20px;
 
     /* 2 POSIÇÃO */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
     /* 3 TAMANHO */
     min-height: 100vh;
@@ -27,14 +27,15 @@ body{
 }
 
 /*----------CONTEINER----------*/
-.cabecalho_conteiner{
+.conteiner{
     /* 2 POSIÇÃO */
-     width:100%;
+    width:100%;
     max-width:1200px;
 
     margin:0 auto;
 
-    padding:0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------- MENU----------*/
@@ -42,11 +43,10 @@ body{
 .cabecalho_menu{
     /* 2 POSIÇÃO */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-    /* 3 TAMANHO */
-    width: 100%;
+    justify-content: center;
+    /*flex-direction: column;*/
+    margin-bottom: 100px;
+
 }
 
  .cabecalho_menu ul{  /*o ul precisa ser declarado PARA QUE RETIRE OS SIMBOLOS DAS LINHAS */ 
@@ -83,15 +83,9 @@ body{
 /*----------CONTEUDO----------*/
 .cabecalho_conteudo{
 
+    /* 2 POSIÇÃO */
     width:100%;
     max-width:700px;
-
-    margin-top:auto;
-    margin-bottom:auto;
-    
-    
-    
-    
     
     /* 1 CAIXA
     margin: auto auto auto 100px;
@@ -161,6 +155,12 @@ body{
 
 /*---------CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL-----------*/
 
+/* .conteiner{
+    width:100%;
+    max-width:700px;
+
+    margin: auto;
+}  */
 
 .conteudo_principal{
     /* 1 CAIXA */
@@ -172,16 +172,7 @@ body{
 
 
 .projeto_01{
-        
-    padding: 0px 20px;
-
-    width:100%;
     max-width:700px;
-
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-
 
     /* 1 CAIXA */
     
