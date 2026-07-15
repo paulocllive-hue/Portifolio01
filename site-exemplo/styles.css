@@ -3,136 +3,208 @@
     padding: 0px;
     box-sizing: border-box;    
 }
-
+/*------------CONDFIGURAÇÃO GERAL-----------*/
 body{
+    /* 5 TEXTO */
     font-family: sans-serif;
     font-size: 18px;
 }
-/* CONFIGURAÇÃO CABEÇALHO */
+/*---------CONFIGURAÇÃO CABEÇALHO----------- */
 .cabecalho{
-    background-color:rgb(22, 19, 14);
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center; 
-
+    /* 1 CAIXA */
     padding: 25px 20px;
 
-}
-/* MENU CENTRALIZADO */
-.cabecalho_menu{
-    width: 100%;
-
+    /* 2 POSIÇÃO */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    /* 3 TAMANHO */
+    min-height: 100vh;
+
+    /* 4 VISUAL COR */
+    background-color:rgb(22, 19, 14);
+}
+
+/*----------CONTEINER----------*/
+.cabecalho_conteiner{
+    /* 2 POSIÇÃO */
+     width:100%;
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+}
+
+/*---------- MENU----------*/
+
+.cabecalho_menu{
+    /* 2 POSIÇÃO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    /* 3 TAMANHO */
+    width: 100%;
 }
 
  .cabecalho_menu ul{  /*o ul precisa ser declarado PARA QUE RETIRE OS SIMBOLOS DAS LINHAS */ 
+    /* 2 POSIÇÃO */
     display: flex;
     gap: 30px;
 
+    /* 4 VISUAL COR*/
     list-style: none;
 }
 
-.cabecalho_menu a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.cabecalho_menu a:hover{
-    color: #ffc011;
-    transition: 0.5s;
-}
-
-/* CONTEUDO */
-.cabecalho_conteudo{
+.cabecalho_menu a{ /* ELEMENTO NORMAL -> DEFINIR A MUDANÇA A CONTECER E NO -> -> HOVER -> DEFINIR A MUDANÇA A CONTECER*/
     
-    width: 100%;
-    max-width: 700px;
+    /* 4 VISUAL COR*/
+    color: white;
 
-    margin-bottom: auto;
-    margin:auto;
-    margin-left: 100px;
+    /* 5 TEXTO*/
+    font-size: 20px;
+    text-decoration: none;/*TIRA OS SUBLINHADOS*/
+    text-transform: uppercase;/*TIRA OS PONTOS DAS PALAVRAS*/
+
+    /*6 EFEITOS */
+    transition: color 0.5s;
+
+}
+
+.cabecalho_menu a:hover{/*DEFINIÇÃO DA MUDAÇA CONTECENDO NO PAI PELO FILHO DEFININDO O QUE MUDA*/
+    /* 4 VISUAL COR*/
+    color: #ffc011;
+
+    
+}
+
+/*----------CONTEUDO----------*/
+.cabecalho_conteudo{
+
+    width:100%;
+    max-width:700px;
+
+    margin-top:auto;
+    margin-bottom:auto;
+    
+    
+    
+    
+    
+    /* 1 CAIXA
+    margin: auto auto auto 100px;
+
+    /* 3 TAMANHO */
+    /*width: 100%;
+   /* max-width: 700px; */
+    
 }
 
 .cabecalho_titulo{
-    color: white;
-    font-size: 50px;
+    
+    /*1 CAIXA */
     margin-bottom: 30px;
+
+    /* 4 VISUAL COR*/
+    color: white;
+
+    /*5 TEXTO */
+    font-size: 50px;
 }
 
 .cabecalho_paragrafo{
+    
+    /* 1 CAIXA */
+    margin-bottom: 30px;
+
+    /* 4 VISUAL COR*/
     color: white;
+
+    /* 5 TEXTO */
     font-size: 25px;
     line-height: 1.4;
-
-    margin-bottom: 30px;
 }
-
+/*--------BOTÃO---------*/
 .cabecalho_botao{
-    background-color: #ffc011;
-    color: #000000;
 
+    /* 1 CAIXA */
     padding: 15px 30px;
 
+    /* 4 VISUAL COR*/
+    background-color: #ffc011;
+    color: #000000;
     border: none;
     border-radius: 10px;
 
+    /* 5 TEXTO */
     font-size: 20px;
     font-weight: bold;
 
+    /* 6 EFEITOS */
     cursor: pointer;/* ESSE CURSOR SE REFERE AO CURSOR DO MOUSE QUANDO PASSA POR CIMA DO BOTÃO ELE MUDA O CURSOS PARA O DESEJADO */
-
     transition: 0.5s;
 
 }
 
+.cabecalho_botao a{
+    /* 5 TEXTO */
+    text-decoration: none;
+    color: #000000;
+}
+
 .cabecalho_botao:hover{
+    /* 4 VISUAL COR*/
     background-color: #ad7f00;
 }
 
-/* CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL */
+/*---------CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL-----------*/
+
 
 .conteudo_principal{
+    /* 1 CAIXA */
+    padding: 25px 20px;
+
+    /* 4 VISUAL */
     background-color: #e4dede;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    padding: 50px 20px;
-    
 }
 
-.conteudo_h2{
-    text-align: center;
-}
-
-.conteudo_p1{
-    margin-left: 100px;
-}
-
-.projetos{
-    margin-left: 100px;
-}
 
 .projeto_01{
-    display: block;
-    gap: 30px;
+        
+    padding: 0px 20px;
 
-}
-h3{
-    gap: 30px;
+    width:100%;
+    max-width:700px;
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+
+    /* 1 CAIXA */
+    
+    /* padding: 0px 20px; */
+
+    /* 2 POSIÇÃO */
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+
+    /* 3 TAMANHO */
+    /* width: 100%;
+    max-width: 1200px; */
+
+    /* margin: 0 auto; */
 }
 
-p{
-    gap: 30px;
-}
+/* h3{
+    /*1 CAIXA */
+   /* margin-bottom: 10px;
+} */
 
-footer{ 
+.rodape{ 
 
     /* 1 CAIXA */
      padding: 20px;

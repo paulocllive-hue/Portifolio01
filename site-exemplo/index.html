@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +10,28 @@
 
     <header class="cabecalho"><!--ESSA É A TAG DO CABEÇALHO-->
 
-        <nav class="cabecalho_menu">
-            <ul>
-                <li><a>Experiência</a></li>
+        <div class="cabecalho_conteiner">
 
-                <li><a>Contato</a></li>
+            <nav class="cabecalho_menu">
+                <ul>
+                    <li><a href="#etapas">Experiência</a></li>
 
-                <li><a>História</a></li>
+                    <li><a href="#contato">Contato</a></li>
 
-            </ul>
-        </nav>
+                    <li><a href="#historia">História</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
 
         <div class="cabecalho_conteudo">
            
-            <h1 class="cabecalho_titulo">Bem-vindo ao meu portfólio.<br> Meu nome é Paulo Cesar Leal</h1>
+            <h1 class="cabecalho_titulo">Bem-vindo ao meu portfólio. Meu nome é Paulo Cesar Leal</h1>
 
             <p class="cabecalho_paragrafo">Demostração breve dos meus conhecimentos. Pequenas demosntrações de projetos pessoais que podem ser complexós de diversas formas.</p>
 
-            <button class="cabecalho_botao">Demonstração</button>
+            <button class="cabecalho_botao"><a href="#etapas">Demonstração</a></button>
 
         </div>
 
@@ -35,21 +39,26 @@
     </header>
 
     <main class="conteudo_principal"><!--ESSA É A TAG DO CONTEÚDO PRINCIPAL-->
-        <h2 class="conteudo_h2">Soluções que pode salvar vidas...</h2>
-        <p class="conteudo_p1">Desenvolvimento Web. Desenvolver tecnologias que possam ser acessados de forma rapida e simples.</p>
+        
+        <div class="conteudo_conteiner">
 
-        <section class="projetos" id="etapas">
+            <section class="projetos" id="etapas">
 
-            <div class="projeto_01">   
+                <div class="projeto_01">   
 
-                <h3>Landing Page: Site direcionado para afunilamento de clientes.</h3>
-            <p>Projeto 1: Sistema de Gerenciamento de Tarefas</p>
-            <p>Projeto 3: Site de Portfólio Pessoal</p>
+                    <h2 class="conteudo_h2">Soluções que pode salvar vidas...</h2>
+                    <p class="conteudo_p1">Desenvolvimento Web. Desenvolver tecnologias que possam ser acessados de forma rapida e simples.</p>
 
-            </div>
+                    <h3>Landing Page: Site direcionado para afunilamento de clientes.</h3>
+                <p>Projeto 1: Sistema de Gerenciamento de Tarefas</p>
+                <p>Projeto 3: Site de Portfólio Pessoal</p>
 
-            
-        </section>
+                </div>
+
+                
+            </section>
+
+        </div>
 
     </main>
 
@@ -61,7 +70,7 @@
 
     <div class="p2"><p>Em busca de crescimento profissional, mudei-me para Cuiabá, Mato Grosso, onde trabalhei em uma empresa de tecnologia e, posteriormente, como profissional autônomo. Atualmente, continuo estudando e desenvolvendo projetos próprios para fortalecer meu portfólio e construir uma carreira sólida na área de tecnologia.</p></div> -->
 
-    <footer> <!--ESSA É A TAG DO RODAPÉ-->
+    <footer class="rodape" id="contato"> <!--ESSA É A TAG DO RODAPÉ-->
         <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
     </footer>
 
